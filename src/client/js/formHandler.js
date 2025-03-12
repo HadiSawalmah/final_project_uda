@@ -1,3 +1,4 @@
+    // Function to fetch city data using the GeoNames API
 async function getCityData() {
     const cityName = document.getElementById('countryNameInput')?.value.trim();
     if (!cityName) {
@@ -24,6 +25,7 @@ async function getCityData() {
     }
 }
 
+// Function to fetch weather data using the Weatherbit API
 async function getWeather() {
     const cityName = document.getElementById('countryNameInput')?.value.trim();
     const tripDate = document.getElementById('dateInput')?.value;
@@ -45,6 +47,7 @@ async function getWeather() {
     }
 }
 
+// Function to fetch an image from Pixabay API based on the city name
 async function getImage() {
     const cityName = document.getElementById('countryNameInput')?.value.trim();
     if (!cityName) {

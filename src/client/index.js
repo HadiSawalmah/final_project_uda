@@ -1,11 +1,11 @@
-    import { getCityData, getWeather, getImage } from './client/js/formHandler';
-    import './client/styles/resets.scss';
-    import './client/styles/base.scss';
-    import './client/styles/footer.scss';
-    import './client/styles/form.scss';
-    import './client/styles/header.scss';
+    import { getCityData, getWeather, getImage } from './js/formHandler';
+    import './styles/resets.scss';
+    import './styles/base.scss';
+    import './styles/footer.scss';
+    import './styles/form.scss';
+    import './styles/header.scss';
 
-
+// Registering a service worker for offline support
     if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
         navigator.serviceWorker
@@ -19,6 +19,7 @@
     });
     }
 
+    // Handling button click to fetch and display city data, weather, and images
     document.getElementById('Btn').addEventListener('click', async () => {
         const cityData = await getCityData();
         const weatherData = await getWeather();

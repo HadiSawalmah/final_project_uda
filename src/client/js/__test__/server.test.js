@@ -1,6 +1,7 @@
     const request = require('supertest');
     const app = require('../../../server/server');
 
+    // Testing the Express server to ensure it serves index.html correctly
     describe('Express Server Tests', () => {  
     test('should return the index.html file on GET /', async () => {
         const response = await request(app).get('/');
