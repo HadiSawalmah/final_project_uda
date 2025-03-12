@@ -1,6 +1,9 @@
 {
   "name": "final_project_uda",
   "version": "1.0.0",
+  "engines": {
+    "node": "v20.11.1"
+  },
   "description": "",
   "main": "service-worker.js",
   "scripts": {
