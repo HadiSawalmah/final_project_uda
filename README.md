@@ -1,42 +1,95 @@
-# Travel Planner App
+## Travel App
 
-# Description
+# Overview
 
-Travel Planner App is a web application that helps users plan their trips by providing city data, weather forecasts, and relevant images. The app integrates with external APIs to fetch geographical information, weather predictions, and city images to enhance the travel planning experience.
+The Travel App is a web application that helps users plan their trips by gathering information from multiple APIs. It allows users to enter a destination and a departure date, then retrieves details such as weather forecasts, location images, and other relevant travel information.
 
 # Features
 
-Search for city details (latitude, longitude, country name)
+- Users can input a destination and departure date.
 
-Retrieve weather forecasts for the chosen destination
+- The app fetches weather data for the selected location.
 
-Display images related to the selected city
+- Displays an image of the destination.
 
-Service worker implementation for offline caching
+- Uses multiple APIs to gather relevant travel details.
 
 # Technologies Used
 
-Frontend: JavaScript, SCSS
+- JavaScript (ES6+)
 
-Backend: Node.js, Express.js
+- Node.js & Express.js (for backend server)
 
-# APIs:
+- Webpack (for module bundling)
 
-GeoNames API (for city data)
+- Babel (for ES6+ support)
 
-Weatherbit API (for weather forecasts)
+- Sass (for styling)
 
-Pixabay API (for city images)
+-Service Workers (for caching and offline support)
 
-Build Tools: Webpack
+- APIs Used:
 
-Testing: Jest, Supertest
+    - Geonames API (for location data)
 
-Service Workers: For caching and offline functionality
+    - Weatherbit API (for weather forecast)
 
+    - Pixabay API (for images)
 
-# Requirements
+## Installation
 
-This project requires the following versions to run properly:
+# Prerequisites
 
-- **Node.js**: v20.11.1
+Ensure you have the following installed:
+
+- Node.js (LTS version recommended)
+
+- npm (comes with Node.js)
+
+# Steps to Run Locally
+
+# 1-Clone the repository:
+
+git clone git@github.com:HadiSawalmah/final_project_uda.git
+
+# 2-Install dependencies:
+
+npm install
+
+# 3-Set up environment variables:
+
+- Create a .env file in the root directory.
+
+- Add the following API keys (replace YOUR_API_KEY with actual keys):
+
+GEONAMES_USERNAME=YOUR_USERNAME
+WEATHERBIT_API_KEY=YOUR_API_KEY
+PIXABAY_API_KEY=YOUR_API_KEY
+
+# 4-Build the project:
+
+npm run build
+
+# 5-Start the server:
+
+npm start
+
+# 6-Open the application in your browser:
+
+ - Navigate to http://localhost:3000/
+
+## Usage
+
+- Enter a destination and a departure date.
+
+- Click the "Click" button to fetch travel details.
+
+- View the weather forecast and an image of the location.
+
+## Troubleshooting
+
+- If the app fails to fetch data, check if API keys are correctly set in the .env file.
+
+- Ensure the backend server is running before opening the front-end.
+
+- Run npm run dev for development mode with hot-reloading.
